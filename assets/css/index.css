@@ -1,0 +1,205 @@
+/** Parts */
+.heading {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: max-content;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+}
+
+/** Heading */
+.nav-item {
+  color: rgba(256, 256, 256, 0.75);
+  font-size: 1rem;
+  margin: 12px;
+  transition: all 0.25s linear;
+  display: inline-block;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0);
+  box-shadow: rgba(99, 99, 99, 0) 0px 2px 8px 0px;
+  border-radius: 3px;
+}
+
+.nav-item:hover {
+  color: rgb(0,0,0);
+  border: 1px solid rgba(0,0,0,0.8);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgba(256, 256, 256, 0.75);
+}
+
+.nav-item.active {
+  color: rgb(0,0,0);
+  font-weight: 800;
+  box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;
+  background-color: rgba(256, 256, 256, 0.4);
+}
+
+/** Content landing page */
+.container > .section {
+  min-height: 100vh;
+  position: relative;
+  padding: 52px 24px;
+}
+
+.background {
+  height: 115vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/** Intro */
+.intro {
+  position: relative;
+}
+
+.background > img {
+  width: 100%;
+  height: 115vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+}
+
+.self-intro {
+  position: relative;
+  z-index: 2;
+  width: 290px;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+  border-radius: 10px;
+  background: rgba(256, 256, 256, 0.75);
+  top: 50vh;
+  left:calc(70% - 145px);
+  animation: slideDownToCorner 5s ease-in-out 1;
+  -ms-zoom-animation: slideDownToCorner 5s ease-in-out 1;
+  -o-animation: slideDownToCorner 5s ease-in-out 1;
+  -webkit-animation: slideDownToCorner 5s ease-in-out 1;
+  -moz-animation: slideDownToCorner 5s ease-in-out 1;;
+}
+
+/** Statement */
+.state .content,
+.skillset .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar, .bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 12px;
+}
+
+.avatar {
+  margin-top: 120px;
+}
+.bio {
+  flex-direction: column;
+}
+
+.avatar > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+/** Skillset */
+.skillset .content {
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10%;
+}
+
+.skills-holder {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 70px));
+  width: 100%;
+  grid-gap: 10px;
+  cursor: pointer;
+}
+.skills-holder > div {
+  transition: linear 1s all;
+}
+.skills-holder > div:hover {
+  transform: rotateY(180deg);
+}
+.skills-holder img {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/** Footer */
+.socialmedia {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  transition: all linear 0.5s;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.socialmedia:not(.slideable) {
+  background-image: url('/assets/img/wall_aurora.jpg');
+  background-origin: padding-box;
+  background-position: center;
+  background-color: rgb(102, 123, 167);
+}
+.SMLogo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0,0,0);
+  min-width: 150px;
+  border-radius: 3px;
+}
+.socialmedia.slideable .SMLogo {
+  min-width: unset;
+}
+.SMLogo:hover {
+  color: rgb(256, 256, 256);
+  font-weight: 700;
+}
+
+.SMLogo > img {
+  width: 45px;
+  height: 45px;
+  padding: 4px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+  border-radius: 40%;
+}
+
+.SMLogo:hover > img {
+  opacity: 0.8;
+}
+
+.logo-text {
+  display: block;
+}
+

@@ -1,0 +1,73 @@
+/* Contains all media queries */
+@media screen and (max-width: 770px) {
+  /* index.css */
+  .state .content,
+  .skillset .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .avatar, .bio {
+    width: 100%;
+  }
+  .avatar > img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .self-intro {
+    left:calc(50% - 145px);
+    animation: unset;
+  }
+  .title {
+    padding: 30px;
+  }
+  /* Common.css */
+  .quotation{
+    font-size: 1.1em;
+    padding: 4px 12px;
+    line-height: 1.1;
+  }
+  .quotation:before {
+    left: -10px;
+    top: 0;
+    font-size: 2em;
+  }
+  .quotation::after {
+    left: 10px;
+    top: 15px;
+    font-size: 2em;
+  }
+  footer{
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .socialmedia.slideable {
+    align-items: flex-start;
+    position: fixed;
+    top: 30vh;
+    left: 30px;
+    flex-direction: column;
+    z-index: 10;
+    animation: slideLeft 3s ease-in 1;
+    -ms-zoom-animation: slideLeft 3s ease-in 1;
+    -o-animation: slideLeft 3s ease-in 1;
+    -webkit-animation: slideLeft 3s ease-in 1;
+    -moz-animation: slideLeft 3s ease-in 1;
+  }
+
+  .socialmedia.disappear {
+    animation: disappear 3s ease-in 1;
+    -ms-zoom-animation: disappear 3s ease-in 1;
+    -o-animation: disappear 3s ease-in 1;
+    -webkit-animation: disappear 3s ease-in 1;
+    -moz-animation: disappear 3s ease-in 1;
+  }
+  .socialmedia.slideable > .SMLogo {
+    margin: 12px;
+  }
+  .socialmedia.slideable .logo-text {
+    display: none;
+  }
+}
