@@ -11,7 +11,7 @@
   }
   100% {
     top: 50vh;
-    left: calc(70% - 145px);
+    left: calc(80% - 145px);
   }
 }
 @-moz-keyframes slideDownToCorner {
@@ -27,7 +27,7 @@
   }
   100% {
     top: 50vh;
-    left: calc(70% - 145px);
+    left: calc(80% - 145px);
   }
 }
 @-webkit-keyframes slideDownToCorner {
@@ -43,7 +43,7 @@
   }
   100% {
     top: 50vh;
-    left: calc(70% - 145px);
+    left: calc(80% - 145px);
   }
 }
 @-o-keyframes slideDownToCorner {
@@ -59,7 +59,7 @@
   }
   100% {
     top: 50vh;
-    left: calc(70% - 145px);
+    left: calc(80% - 145px);
   }
 }
 
@@ -72,7 +72,7 @@
     opacity: 1;
   }
   100% {
-    top: 30vh;
+    top: calc(20vh - 78px);
     opacity: 1;
   }
 }
@@ -85,7 +85,7 @@
     opacity: 1;
   }
   100% {
-    top: 30vh;
+    top: calc(20vh - 78px);
     opacity: 1;
   }
 }
@@ -98,7 +98,7 @@
     opacity: 1;
   }
   100% {
-    top: 30vh;
+    top: calc(20vh - 78px);
     opacity: 1;
   }
 }
@@ -111,7 +111,7 @@
     opacity: 1;
   }
   100% {
-    top: 30vh;
+    top: calc(20vh - 78px);
     opacity: 1;
   }
 }
@@ -169,35 +169,97 @@
   }
 }
 
-@keyframes disappear {
+@keyframes slideRight {
   0% {
+    right: -30vw;
+    opacity: 0;
+  }
+  50% {
     opacity: 1;
   }
   100% {
+    right: 30px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideRight {
+  0% {
+    right: -30vw;
     opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    right: 30px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideRight {
+  0% {
+    right: -30vw;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    right: 30px;
+    opacity: 1;
+  }
+}
+@-o-keyframes slideRight {
+  0% {
+    right: -30vw;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    right: 30px;
+    opacity: 1;
+  }
+}
+
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    top:30vh
+  }
+  100% {
+    opacity: 0;
+    top: 70vh
   }
 }
 @-moz-keyframes disappear {
   0% {
     opacity: 1;
+    top:30vh
   }
   100% {
     opacity: 0;
+    top: 70vh
   }
 }
 @-webkit-keyframes disappear {
   0% {
     opacity: 1;
+    top:30vh
   }
   100% {
     opacity: 0;
+    top: 70vh
   }
 }
 @-o-keyframes disappear {
   0% {
     opacity: 1;
+    top:30vh
   }
   100% {
     opacity: 0;
+    top: 70vh
   }
 }

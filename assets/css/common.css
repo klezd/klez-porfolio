@@ -34,7 +34,7 @@ img {
 }
 
 /* Layout home  */
-.state .background, .project .background{
+/* .state .background, .project .background{
   background: linear-gradient(rgb(166,117,51), rgb(179,188,207));
   background: -o-linear-gradient(rgb(166,117,51), rgb(179,188,207));
   background: -moz-linear-gradient(rgb(166,117,51), rgb(179,188,207));
@@ -49,12 +49,36 @@ img {
   -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 87%);
   clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 87%);
   z-index: 1;
+} */
+
+.container.index .section:nth-of-type(2n) .background {
+  background: linear-gradient(rgb(166,117,51), rgb(179,188,207));
+  background: -o-linear-gradient(rgb(166,117,51), rgb(179,188,207));
+  background: -moz-linear-gradient(rgb(166,117,51), rgb(179,188,207));
+  background: -webkit-linear-gradient(rgb(166,117,51), rgb(179,188,207));
+  clip-path: polygon(0 0, 100% 13%,  100% 87%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 13%,  100% 87%, 0 100%);
 }
 
-.project .background{ 
-  clip-path: polygon(0 0, 100% 13%,  100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0,  100% 100%, 0 100%);
-  height: 100vh;
+.container.index .section:nth-of-type(2n+1):not(.intro) .background {
+  background: linear-gradient( rgb(179,188,207), rgb(166,117,51));
+  -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 87%);
+  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 87%);
+}
+
+.container.index .section:last-of-type .background { 
+  clip-path: polygon(0 0, 100% 13%,  100% 100%, 0 100%) !important;
+  -webkit-clip-path: polygon(0 0, 100% 0%,  100% 100%, 0 100%) !important;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.container.index .section.project .background {
+  min-height: 100vh;
+  height: 110% !important;
+  clip-path: polygon(0 0%, 100% 0%,  100% 100%, 0 100%) !important;
+  -webkit-clip-path: polygon(0 0%, 100% 0%,  100% 100%, 0 100%) !important;
+  z-index: -2;
 }
 
 .content {
@@ -96,13 +120,21 @@ img {
   color: #ccc;
   font-size: 3em;
 }
-footer{
+footer {
   margin:0;
   text-align: right;
   font-size: 1.2em;
   font-style: italic;
 }
 
-
+footer.page-footer {
+  margin:0;
+  text-align: right;
+  font-size: 0.9em;
+  font-style: italic;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50vw - 32px);
+}
 
 

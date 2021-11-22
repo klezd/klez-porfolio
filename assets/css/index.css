@@ -52,7 +52,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 /** Intro */
@@ -67,18 +67,43 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
 }
 
-.self-intro {
+.floating {
   position: relative;
+}
+
+.floating .self-intro, .floating .short-bio, .floating.self-intro {
+  position: absolute;
   z-index: 2;
-  width: 290px;
   padding: 30px;
-  text-align: center;
-  font-size: 1.4rem;
   box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
   border-radius: 10px;
   background: rgba(256, 256, 256, 0.75);
+}
+
+.self-intro {
+  width: 290px;
+  text-align: center;
+  font-size: 1.6rem;
   top: 50vh;
-  left:calc(70% - 145px);
+  left: calc(80% - 145px);
+  cursor: text;
+  font-weight: 700;
+}
+
+.short-bio {
+  width: 500px;
+  font-size: 1.3rem;
+  top: calc(20vh - 78px);
+  left: calc(25% - 140px);
+  cursor: text;
+  animation: slideDown 5s ease-in-out 1;
+  -ms-zoom-animation: slideDown 5s ease-in-out 1;
+  -o-animation: slideDown 5s ease-in-out 1;
+  -webkit-animation: slideDown 5s ease-in-out 1;
+  -moz-animation: slideDown 5s ease-in-out 1;;
+}
+
+.floating.self-intro {
   animation: slideDownToCorner 5s ease-in-out 1;
   -ms-zoom-animation: slideDownToCorner 5s ease-in-out 1;
   -o-animation: slideDownToCorner 5s ease-in-out 1;
@@ -107,6 +132,7 @@
 }
 .bio {
   flex-direction: column;
+  cursor: text;
 }
 
 .avatar > img {
@@ -120,25 +146,33 @@
 
 /** Skillset */
 .skillset .content {
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 700;
   padding: 10%;
+  text-align: center;
+  cursor: text;
 }
 
 .skills-holder {
   padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 70px));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 70px)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   grid-gap: 10px;
   cursor: pointer;
 }
 .skills-holder > div {
   transition: linear 1s all;
+  margin: 4px;
+  padding: 2px;
 }
 .skills-holder > div:hover {
   transform: rotateY(180deg);
@@ -150,12 +184,12 @@
   border-radius: 4px;
 }
 
+/* Project */
+.project {
+  height: auto;
+}
 /** Footer */
 .socialmedia {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
   width: 100%;
   transition: all linear 0.5s;
   padding-top: 30px;
@@ -163,10 +197,38 @@
   position: relative;
 }
 .socialmedia:not(.slideable) {
-  background-image: url('/assets/img/wall_aurora.jpg');
-  background-origin: padding-box;
+  background-image: url('../img/wall_sunset.jpg');
+  background-origin: border-box;
   background-position: center;
-  background-color: rgb(102, 123, 167);
+  /* background-color: rgb(102, 123, 167); */
+  background-color: rgb(166,117,51);
+  padding-bottom: 20vh;
+  background-size: cover;
+}
+.socialmedia.about, .socialmedia.work {
+  background-image: url('../img/wall_grey.jpg');
+  background-position: top;
+  background-color: rgb(163,168,174);
+  background-size: cover;
+}
+.socialmedia .title {
+  display: none;
+  text-align: center;
+}
+.socialmedia:not(.slideable) .title {
+  display: block;
+}
+.socialmedia .logo-holder {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+.socialmedia:not(.slideable) .logo-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 .SMLogo {
   display: flex;
@@ -176,13 +238,19 @@
   color: rgb(0,0,0);
   min-width: 150px;
   border-radius: 3px;
+  transition: all linear 0.6s;
 }
-.socialmedia.slideable .SMLogo {
+.socialmedia.about, .socialmedia.work .SMLogo {
+  color: #fff;
+}
+.socialmedia.slideable .logo-holder .SMLogo {
   min-width: unset;
+  margin: 12px 0;
 }
 .SMLogo:hover {
   color: rgb(256, 256, 256);
   font-weight: 700;
+  transform: scale(1.2);
 }
 
 .SMLogo > img {
@@ -193,13 +261,19 @@
   object-position: center;
   box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
   border-radius: 40%;
+  opacity: 0.8;
 }
 
 .SMLogo:hover > img {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .logo-text {
   display: block;
+  background-color: rgba(256, 256, 256, 0.3);
+}
+
+.SMLogo:hover .logo-text {
+  background-color: unset;
 }
 

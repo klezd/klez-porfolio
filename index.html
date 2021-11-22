@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/anim.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/work-index.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <title>Klez Dao - Frontend Developer - Portfolio</title>
   </head>
@@ -30,15 +31,20 @@
         About
       </a>
     </div>
-    <div class="container">
+    <div class="container index">
 
       <div class="section intro" id="intro">
         <div class="background">
           <img src="assets/img/wall_top.jpg" alt="Quynh Dao - Klez" />
         </div>
-        <div class="floating self-intro">
-          <h2>Klez Dao</h2>
-          <p>Web Developer</p>
+        <div class="floating">
+          <div class="self-intro">
+            <p>Web Developer</p>
+          </div>
+          <div class="short-bio">
+            <p>I am Klez. I am a Web Developer, with focused on Frontend development.</p>
+            <p>Actively looking for a new opportunity to enhance and improve skills.</p>
+          </div>
         </div>
       </div>
 
@@ -50,9 +56,9 @@
             <img src="assets/img/Quynh_Klez.JPG" />
           </div>
           <div class="bio">
-            <h1>
+            <div class="title">
               What inspires me ?
-            </h1>
+            </div>
             <blockquote>
               <p class="quotation"> 
                 Success is the sum of small efforts repeated day in and day out.
@@ -70,65 +76,127 @@
         </div>
       </div>
 
-      <div class="section skillset" id="skillset">
-        <div class="background"></div>
-        <div class="content">
-          <div class="title">
-            MY SKILLS
-          </div>
-          <div class="skills-holder">
-            <div>
-              <img src="assets/img/logo/TS.png" alt="TypeScript" />
-            </div>
-            <div>
-              <img src="assets/img/logo/JS.png" alt="JavaScript" />
-            </div>
-            <div>
-              <img src="assets/img/logo/HTML.png" alt="HTML / HTML 5"/>
-            </div>
-            <div>
-              <img src="assets/img/logo/CSS.png" alt="CSS / CSS3"/>
-            </div>
-            <div>
-              <img src="assets/img/logo/React.png" alt="React Framework"/>
-            </div>
-            <div>
-              <img src="assets/img/logo/redux.png" alt="Redux"/>
-            </div>
-            <div>
-              <img src="assets/img/logo/git.png" alt="Version control - GIT"/>
-            </div>
-            <div>
-              <img src="assets/img/logo/nodejs.png" alt="NodeJS"/>
-            </div>
-            <div>
-              <img src="assets/img/logo/firebase.png" alt="Firebase"/>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="section project" id="project">
         <div class="background"></div>
-        <div class="content">
+        <div class="content" id="project-container">
+          <div class="title" id="project-title">
+            WORKS
+          </div>
+          <div class="works-holder" id="project-holder">
+            <div class="work-item">
+              <div class="work-image">
+                <img src="assets/img/works/jinxuan.PNG" />
+              </div>
+              <div class="work-content">
+                <div class="content-bounder">
+                  <div class="work-description">
+                    <div class="title"> JinXuan Fashion </div>
+                    <p>
+                      A E-Store liked web application built with React and JavaScript
+                    </p>
+                  </div>
+                  <div class="work-action">
+                    <a href="https://github.com/klezd/jinxuan-fashion" target="_blank" class="actionbutton githubBtn">
+                      Open on Github
+                    </a>
+                    <a href="https://jinxuanfashion-2021.web.app/" target="_blank" class="actionbutton openApp">
+                      View App
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="overlay">
+                <div class="btnLiked">Click me</div> 
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-image">
+                <img src="assets/img/works/instaimg.PNG" />
+              </div>
+              <div class="work-content">
+                <div class="content-bounder">
+                  <div class="work-description">
+                    <div class="title">
+                      InstaIMG
+                    </div>
+                    <p>
+                      A web application which allows users to post pictures and updated status. 
+                      Built with React and JavaScript
+                    </p>
+                  </div>
+                  <div class="work-action">
+                    <a href="https://github.com/klezd/insta-clone" target="_blank" class="actionbutton githubBtn">
+                      Open on Github
+                    </a>
+                    <a href="https://insta-clone-eda38.web.app/" target="_blank" class=" actionbutton openApp">
+                      View App
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="overlay">
+                <div class="btnLiked" >Click me</div> 
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-image">
+                <img src="assets/img/works/github-showcase.PNG" />
+              </div>
+              <div class="work-content">
+                <div class="content-bounder">
+                  <div class="work-description">
+                    <div class="title">
+                      Github - What behinds a profile?
+                    </div>
+                    <p>
+                      A React built web application with authenticated and integrated with Github API
+                    </p>
+                  </div>
+                  <div class="work-action">
+                    <a href="https://github.com/klezd/github-showcase" target="_blank" class="actionbutton githubBtn">
+                      Open on Github
+                    </a>
+                    <a href="https://show-me-your-github.herokuapp.com/" target="_blank" class="actionbutton openApp">
+                      View App
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="overlay">
+                <div class="btnLiked" >Click me</div> 
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
+
+
     </div>
+
     <div class="socialmedia slideable" id="socialmedia">
-      <a href="https://www.linkedin.com/in/quynhdao-197/" target="_blank" class="SMLogo">
-        <img src="assets/img/logo/linkedin.png" />
-        <p class="logo-text">quynhdao-197</p>
-      </a>
-      <a href="https://github.com/klezd" target="_blank" class="SMLogo">
-        <img src="assets/img/logo/github.png" />
-        <p class="logo-text">klezd</p>
-      </a>
-      <a href="mailto:quynhdao.klez@gmail.com" target="_blank" class="SMLogo">
-        <img src="assets/img/logo/mail.png" />
-        <p class="logo-text">quynhdao.klez@gmail.com</p>
-      </a>
+      <div class="title">
+       FIND ME
+      </div>
+      <div class="logo-holder">
+        <a href="https://www.linkedin.com/in/quynhdao-197/" target="_blank" class="SMLogo">
+          <img src="assets/img/logo/linkedin.png" />
+          <p class="logo-text">quynhdao-197</p>
+        </a>
+        <a href="https://github.com/klezd" target="_blank" class="SMLogo">
+          <img src="assets/img/logo/github.png" />
+          <p class="logo-text">klezd</p>
+        </a>
+        <a href="mailto:quynhdao.klez@gmail.com" target="_blank" class="SMLogo">
+          <img src="assets/img/logo/mail.png" />
+          <p class="logo-text">quynhdao.klez@gmail.com</p>
+        </a>
+      </div>
     </div>
+    
     <script src="assets/js/index.js"></script>
   </body>
 </html>

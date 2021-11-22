@@ -1,20 +1,36 @@
-const triggerOrigin = document.getElementById("skillset");
+const sectionList = document.querySelectorAll(".section");
+const triggerOrigin = sectionList[1]
+  ? sectionList[1]
+  : sectionList[sectionList.length - 2];
+console.log(triggerOrigin);
 const triggerOffset = triggerOrigin.offsetTop - 300;
 
 const triggerElement = document.getElementById("socialmedia");
 const sliderToTrigger = "slideable";
 
-// Checking position initially
+
 function init() {
+  // Set trigger floating buttons
+  // Checking position initially
   const currentPos = window.scrollY;
 
   const isIncludedClass = triggerElement.classList.contains(sliderToTrigger);
 
+  // if the currentpos is below 2 sections, make the float to bottom
   if (currentPos >= triggerOffset) {
+    if (isIncludedClass && window.innerWidth >= 770) {
+      triggerElement.classList.remove(sliderToTrigger);
+    }
+  }
+
+  // If screen is below 770px, remove slider by default
+  if (window.innerWidth < 770) {
     if (isIncludedClass) {
       triggerElement.classList.remove(sliderToTrigger);
     }
   }
+
+  setHeight();
 }
 
 // Scroll trigger floating buttons
@@ -42,4 +58,22 @@ function onScrollHomePage() {
       }
     }
   }
+}
+
+// function clickWorkItem(e) {
+//   const element = e;
+//   const classList = element.classList;
+//   classList.toggle("hover");
+// }
+
+function setHeight() {
+  const projectDiv = document.getElementById("project");
+  const projectContainer = document.getElementById("project-container");
+  const projectTitle = document.getElementById("project-title");
+  const projectHolder = document.getElementById("project-holder");
+
+  const stateDiv = document.getElementById("state");
+  // Set height of div content #project
+  const height = projectTitle.offsetHeight + projectHolder.offsetHeight;
+  projectDiv.style.height = parseInt(height + 40) + "px";
 }
