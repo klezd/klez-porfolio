@@ -1,0 +1,78 @@
+.skills-holder {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-gap: 10px;
+  cursor: pointer;
+}
+.skills-holder > div {
+  transition: linear 1s all;
+  margin: 4px;
+  padding: 2px;
+}
+.skills-holder > div:hover {
+  transform: rotateY(180deg);
+}
+.skills-holder img {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.container.about {
+  /* background-color: rgb(185,194,211); */
+  background: linear-gradient(rgb(185,194,211),rgb(158,158,158));
+  background: -webkit-linear-gradient(rgb(185,194,211),rgb(158,158,158));
+  background: -moz-linear-gradient(rgb(185,194,211),rgb(158,158,158));
+  background: -o-linear-gradient(rgb(185,194,211),rgb(158,158,158));
+}
+
+.container.about .background {
+  z-index: 1;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 30% 1fr
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right .title {
+  letter-spacing: 0.2em;
+  font-size: 2em;
+}
+.right .title:hover {
+  color: rgb(134, 91, 60)
+}
+.right p {
+  cursor: text;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+.download {
+  display: inline-block;
+}
+.download a, .download button {
+  display: inline-block;
+  border: unset !important;
+  font-size: 1em;
+  background: unset !important;
+  color: rgb(93,74,60);
+  font-weight: 500;
+  margin: 0 4px !important;
+  padding: unset;
+  cursor: pointer;
+}
+
+.download:hover a,
+.download:hover button {
+  color: rgb(39, 29, 22);
+}

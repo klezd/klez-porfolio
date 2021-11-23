@@ -2,12 +2,10 @@ const sectionList = document.querySelectorAll(".section");
 const triggerOrigin = sectionList[1]
   ? sectionList[1]
   : sectionList[sectionList.length - 2];
-console.log(triggerOrigin);
 const triggerOffset = triggerOrigin.offsetTop - 300;
 
 const triggerElement = document.getElementById("socialmedia");
 const sliderToTrigger = "slideable";
-
 
 function init() {
   // Set trigger floating buttons
@@ -60,19 +58,11 @@ function onScrollHomePage() {
   }
 }
 
-// function clickWorkItem(e) {
-//   const element = e;
-//   const classList = element.classList;
-//   classList.toggle("hover");
-// }
-
 function setHeight() {
   const projectDiv = document.getElementById("project");
-  const projectContainer = document.getElementById("project-container");
   const projectTitle = document.getElementById("project-title");
   const projectHolder = document.getElementById("project-holder");
 
-  const stateDiv = document.getElementById("state");
   // Set height of div content #project
   const height = projectTitle.offsetHeight + projectHolder.offsetHeight;
   projectDiv.style.height = parseInt(height + 40) + "px";

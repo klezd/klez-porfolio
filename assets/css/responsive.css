@@ -38,9 +38,10 @@
     width: unset;
   }
 
-  .project .content .title {
+  .project .content > .title {
     padding-top: 100px !important;
   }
+
   .title {
     padding: 30px;
     padding-top: 50px;
@@ -81,6 +82,14 @@
   footer{
     font-size: 0.9em;
   }
+  /* About.css */
+  .resume {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -109,6 +118,11 @@
   }
   .socialmedia.slideable .logo-text {
     display: none;
+  }
+  .about .left {
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    letter-spacing: 1em;
   }
 }
 

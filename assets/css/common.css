@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -34,23 +37,6 @@ img {
 }
 
 /* Layout home  */
-/* .state .background, .project .background{
-  background: linear-gradient(rgb(166,117,51), rgb(179,188,207));
-  background: -o-linear-gradient(rgb(166,117,51), rgb(179,188,207));
-  background: -moz-linear-gradient(rgb(166,117,51), rgb(179,188,207));
-  background: -webkit-linear-gradient(rgb(166,117,51), rgb(179,188,207));
-  clip-path: polygon(0 0, 100% 13%,  100% 87%, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0,  100% 87%, 0 100%);
-  z-index: 0;
-}
-
-.skillset .background {
-  background: linear-gradient( rgb(179,188,207), rgb(166,117,51));
-  -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 87%);
-  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 87%);
-  z-index: 1;
-} */
-
 .container.index .section:nth-of-type(2n) .background {
   background: linear-gradient(rgb(166,117,51), rgb(179,188,207));
   background: -o-linear-gradient(rgb(166,117,51), rgb(179,188,207));
@@ -137,4 +123,7 @@ footer.page-footer {
   left: calc(50vw - 32px);
 }
 
-
+hr.divider {
+  width: 50%;
+  margin: auto;
+}

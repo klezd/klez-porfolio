@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" href="./assets/img/Quynh_Klez.JPG" />
+    <link rel="icon" href="./assets/img/logo/klez.png" />
     <meta
       name="description"
       content="Portfolio - Klez"
@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/work-index.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <title>Klez Dao - Frontend Developer - Portfolio</title>
+    <title>Klez Dao | Web Developer</title>
   </head>
   <body onload="init()" onscroll="onScrollHomePage()">
     <div class="heading">
-      <a class="nav-item active" href="index.html">
-        Landing
+      <a class="nav-item active" href="#intro">
+        Home
       </a>
-      <a class="nav-item" href="./work.html">
-        Work
+      <a class="nav-item" href="#project">
+        Works
       </a>
       <a class="nav-item" href="./about.html">
         About
@@ -82,6 +82,7 @@
           <div class="title" id="project-title">
             WORKS
           </div>
+
           <div class="works-holder" id="project-holder">
             <div class="work-item">
               <div class="work-image">
@@ -92,21 +93,22 @@
                   <div class="work-description">
                     <div class="title"> JinXuan Fashion </div>
                     <p>
-                      A E-Store liked web application built with React and JavaScript
+                      An online fashion store application
+                    </p>
+                    <hr class="divider" />
+                    <p class="tech">
+                      React, JavaScript, The FakeStore API, Firebase Authentication, Firebase Hosting
                     </p>
                   </div>
                   <div class="work-action">
                     <a href="https://github.com/klezd/jinxuan-fashion" target="_blank" class="actionbutton githubBtn">
-                      Open on Github
+                      View Github
                     </a>
                     <a href="https://jinxuanfashion-2021.web.app/" target="_blank" class="actionbutton openApp">
                       View App
                     </a>
                   </div>
                 </div>
-              </div>
-              <div class="overlay">
-                <div class="btnLiked">Click me</div> 
               </div>
             </div>
 
@@ -121,22 +123,22 @@
                       InstaIMG
                     </div>
                     <p>
-                      A web application which allows users to post pictures and updated status. 
-                      Built with React and JavaScript
+                      Instagram-liked web application which allows users to post pictures and updated status. 
+                    </p>
+                    <hr class="divider" />
+                    <p class="tech">
+                      React, JavaScript, Firebase Authentication, Firebase Hosting
                     </p>
                   </div>
                   <div class="work-action">
                     <a href="https://github.com/klezd/insta-clone" target="_blank" class="actionbutton githubBtn">
-                      Open on Github
+                      View Github
                     </a>
                     <a href="https://insta-clone-eda38.web.app/" target="_blank" class=" actionbutton openApp">
                       View App
                     </a>
                   </div>
                 </div>
-              </div>
-              <div class="overlay">
-                <div class="btnLiked" >Click me</div> 
               </div>
             </div>
 
@@ -151,12 +153,16 @@
                       Github - What behinds a profile?
                     </div>
                     <p>
-                      A React built web application with authenticated and integrated with Github API
+                      Web application to show a github profile
+                    </p>
+                    <hr class="divider" />
+                    <p class="tech">
+                      React, JavaScript, Github API
                     </p>
                   </div>
                   <div class="work-action">
                     <a href="https://github.com/klezd/github-showcase" target="_blank" class="actionbutton githubBtn">
-                      Open on Github
+                      View Github
                     </a>
                     <a href="https://show-me-your-github.herokuapp.com/" target="_blank" class="actionbutton openApp">
                       View App
@@ -164,8 +170,98 @@
                   </div>
                 </div>
               </div>
-              <div class="overlay">
-                <div class="btnLiked" >Click me</div> 
+            </div>
+
+            <div class="work-item">
+              <div class="work-image">
+                <img src="assets/img/works/theakino.PNG" />
+              </div>
+              <div class="work-content">
+                <div class="content-bounder">
+                  <div class="work-description">
+                    <div class="title">
+                      TheaKino
+                    </div>
+                    <p>
+                      A Movie and TV shows rating and review system 
+                    </p>
+                    <hr class="divider" />
+                    <p class="tech">
+                      React, JavaScript, Heroku, TheMovieDatabase API
+                    </p>
+                  </div>
+                  <div class="work-action">
+                    <a href="https://github.com/klezd/theakino" target="_blank" class="actionbutton githubBtn">
+                      View Github
+                    </a>
+                    <a href="https://theakino.herokuapp.com/" target="_blank" class="actionbutton openApp">
+                      View App
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-image">
+                <img src="assets/img/works/droppee-xmas-carts.PNG" />
+              </div>
+              <div class="work-content">
+                <div class="content-bounder">
+                  <div class="work-description">
+                    <div class="title">
+                      Xmas cart
+                    </div>
+                    <p>
+                      An optional cart items to be approved for wishes of 5 children.
+                    </p>
+                    <p>
+                      An assignment from Droppe.
+                    </p>
+                    <hr class="divider" />
+                    <p class="tech">
+                      React, TypeScript, Heroku, The FakeStore API
+                    </p>
+                  </div>
+                  <div class="work-action">
+                    <a href="https://github.com/klezd/Droppe-Xmas" target="_blank" class="actionbutton githubBtn">
+                      View Github
+                    </a>
+                    <a href="https://droppexmas-klez.herokuapp.com/" target="_blank" class="actionbutton openApp">
+                      View App
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-item">
+              <div class="work-image">
+                <img src="assets/img/works/IMP_portfolio.PNG" />
+              </div>
+              <div class="work-content">
+                <div class="content-bounder">
+                  <div class="work-description">
+                    <div class="title">
+                      IMP Portfolio
+                    </div>
+                    <p>
+                      A Portfolio for Interactive multimedia school course about dynamic web and web technologies: 
+                      web socket, storage, JSON, AJAX and API
+                    </p>
+                    <hr class="divider" />
+                    <p class="tech">
+                      HTML, CSS, JavaScript, DHTML, JQuery, AJAX, JSON
+                    </p>
+                  </div>
+                  <div class="work-action">
+                    <a href="https://github.com/klezd/IMP_portfolio" target="_blank" class="actionbutton githubBtn">
+                      View Github
+                    </a>
+                    <a href="https://www.students.oamk.fi/~t6daqu00/portfolioOnGit/" target="_blank" class=" actionbutton openApp">
+                      View App
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -183,15 +279,17 @@
       </div>
       <div class="logo-holder">
         <a href="https://www.linkedin.com/in/quynhdao-197/" target="_blank" class="SMLogo">
-          <img src="assets/img/logo/linkedin.png" />
+          <div class="wrapper"><img src="assets/img/logo/linkedin.png" /></div>
           <p class="logo-text">quynhdao-197</p>
         </a>
         <a href="https://github.com/klezd" target="_blank" class="SMLogo">
-          <img src="assets/img/logo/github.png" />
+          <div class="wrapper"><img src="assets/img/logo/github.png" /></div>
           <p class="logo-text">klezd</p>
         </a>
         <a href="mailto:quynhdao.klez@gmail.com" target="_blank" class="SMLogo">
-          <img src="assets/img/logo/mail.png" />
+          <div class="wrapper">
+            <img src="assets/img/logo/mail.png" />
+          </div>
           <p class="logo-text">quynhdao.klez@gmail.com</p>
         </a>
       </div>

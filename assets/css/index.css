@@ -158,31 +158,6 @@
   cursor: text;
 }
 
-.skills-holder {
-  padding: 20px;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 70px)); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  grid-gap: 10px;
-  cursor: pointer;
-}
-.skills-holder > div {
-  transition: linear 1s all;
-  margin: 4px;
-  padding: 2px;
-}
-.skills-holder > div:hover {
-  transform: rotateY(180deg);
-}
-.skills-holder img {
-  width: 50px;
-  height: 50px;
-  padding: 4px;
-  border-radius: 4px;
-}
 
 /* Project */
 .project {
@@ -253,7 +228,12 @@
   transform: scale(1.2);
 }
 
-.SMLogo > img {
+.SMLogo .wrapper {
+  border-radius: 40%;
+  background-color: #fff;
+}
+
+.SMLogo img {
   width: 45px;
   height: 45px;
   padding: 4px;
@@ -264,7 +244,7 @@
   opacity: 0.8;
 }
 
-.SMLogo:hover > img {
+.SMLogo:hover img {
   opacity: 1;
 }
 
