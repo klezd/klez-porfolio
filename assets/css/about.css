@@ -34,23 +34,29 @@
 .container.about .background {
   z-index: 1;
 }
-
 .resume {
   display: grid;
   grid-template-columns: 30% 1fr
 }
-
 .left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.left .title {
+  font-size: 2.5rem;
+}
 .right .title {
   letter-spacing: 0.2em;
   font-size: 2em;
+  padding: 40px;
 }
 .right .title:hover {
   color: rgb(134, 91, 60)
+}
+.right .avatar {
+  margin: auto;
+  margin-top: 40px;
 }
 .right p {
   cursor: text;
